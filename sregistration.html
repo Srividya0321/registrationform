@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>Student Bio data</title>
+</head>
+<body style="background-color:lightblue"> 
+	<h1 align="center" style="color:green">Student Bio-data form</h1>
+	<form name="registration">
+	<table align ="center">
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="sname" required></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="pw" required></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" name="email" placeholder="enter email" required></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td><textarea rows="5" cols="20" placeholder="enter address" required></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td><input type="radio" name="gender" value="male" required>Male
+				<input type="radio" name="gender" value="female" required>Female
+			</td>
+		</tr>
+		<tr>
+			<td>Skill set known:</td>
+			<td><input type="checkbox" name="skills" value="C"/>C
+				<input type="checkbox" name="skills" value="C++"/>C++
+				<input type="checkbox" name="skills" value="Python"/>Python
+				<input type="checkbox" name="skills" value="Java"/>Java
+				<input type="checkbox" name="skills" value="Mysql"/>Mysql
+				<input type="checkbox" name="skills" value="HTML"/>HTML</td>
+		</tr>
+		<tr>
+			<td>Range of skils known:</td>
+			<td><input type="range" name="points" min="1" max="10"></td>
+		</tr>
+		<tr>
+		<td> Extra Curricular Activities:</td>
+		<td><input type="text" name="eca" required/></td>
+		</tr>
+		<tr>
+		<td>Languages known:</td>
+		<td>
+			<input type="checkbox" value="Telugu" name="lang">Telugu
+			<input type="checkbox" value="English" name="lang">English
+			<input type="checkbox" value="Hindi" name="lang">Hindi	
+			<input type="checkbox" value="Tamil" name="lang">Tamil
+			<input type="checkbox" value="Kannada" name="lang">Kannada
+			<input type="checkbox" value="Bengali" name="lang">Bengali
+		</td>
+	</tr>
+	<tr>
+		<td>Education Qualification:</td>
+		<td><select>
+			<option value="PG" name="eq">PG</option>
+			<option value="UG" name="eq">UG</option>
+			<option value="Inter" name="eq">Inter</option>
+			<option value="Metriculation" name="eq">Metriculation</oprion>
+			<option value="Other" name="eq">Other</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Phone number:</td>
+		<td><input type="tel" name="ustel" maxlength="10" required/></td>
+	</tr>
+	<tr>
+		<td>Date of Birth:</td>
+		<td><input type="date" name="date" required/></td>
+	</tr>
+	<tr>
+		<td>Nationality</td>
+		<td><input list="nationality" name="nationality">
+			<datalist id="nationality">
+				<option value="Indian" name="n"></option>
+				<option value="German" name="n"></option>
+				<option value="Italian" name="n"></option>
+				<option value="SriLankan" name="n"></option>
+			</datalist>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="submit" onClick="return confirm('Do u really want to submit')">
+			<input type="reset" value="reset" onClick="return confirm('Do u really want to reset')">
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
